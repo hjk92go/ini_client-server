@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 //config(text파일에서 config설정 js, 기록1)
-//알아보기 직관적임, 코드가 너무 김
+//코드 위치에 상관없이 사용 가능, 위치 신경 안써도됨 / 코드가 너무 김
 
 // let HOST_1;
 // let HOST_2;
@@ -32,7 +32,7 @@ let array = fs.readFileSync("config.txt", "utf8").trim().split("\n");
 // }
 
 //config(text파일에서 config설정 js, 기록2)
-//장점 변수 미리 선언할필요X, 좀더 간결한 코드
+//장점 변수 미리 선언할필요X, 간결한 코드 , 위치지정 잘생각해야됨
 const arr = fs.readFileSync("config.txt", "utf8").trim().split("\n");
 
 const [key1, HOST_1] = arr[0].split("=");
